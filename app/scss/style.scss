@@ -265,3 +265,57 @@ background-color: $grey;
 }
 
   
+//START advantages
+
+.advantages{
+    background-color: $bg;
+    padding: 110px 0;
+}
+.advantages__title{
+    color: #fff;
+}
+.advantages__inner{
+display: flex;
+justify-content: space-between;
+
+}
+.advantages__item{
+max-width: 370px;
+text-align: center;
+padding: 0px 15px;
+
+    &:hover{
+        .advantages__item-img{
+            background-color: $green;
+        }
+        .advantages__item-title{
+            color: $green;
+        }
+    }
+    &-img{
+        height: 114px;
+        width: 114px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+        transition: all .5s;
+
+    }
+    &-title{
+        margin-bottom: 25px;
+        color: #fff;
+        @include f500; 
+        transition: all .5s;
+    }
+    &-text{
+        font-size: 15px;
+    }
+
+}
+
+//END advantages
+
+
